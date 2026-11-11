@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">Weight Tracker logo</title>
+  <desc id="desc">A modern teal scale icon with a descending weight chart, beside the words Weight Tracker.</desc>
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" width="220" height="220" rx="54" fill="#102A38"/>
+  <rect x="46" y="51" width="168" height="156" rx="30" fill="#173B49" stroke="#32606A" stroke-width="3"/>
+  <path d="M102 82 Q130 62 158 82" fill="none" stroke="#5EEAD4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M130 81 L143 69" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round"/>
+  <path d="M76 157 L110 139 L137 150 L179 113" fill="none" stroke="url(#brand)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="76" cy="157" r="6" fill="#CCFBF1"/>
+  <circle cx="110" cy="139" r="6" fill="#CCFBF1"/>
+  <circle cx="137" cy="150" r="6" fill="#CCFBF1"/>
+  <circle cx="179" cy="113" r="8" fill="#5EEAD4"/>
+  <text x="280" y="120" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2" fill="#102A38">Weight</text>
+  <text x="280" y="192" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2" fill="#0D9488">Tracker</text>
+  <text x="284" y="225" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="500" letter-spacing="3" fill="#64748B">TRACK YOUR PROGRESS</text>
+</svg>
