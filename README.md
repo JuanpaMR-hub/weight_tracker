@@ -1,3 +1,7 @@
+
+
+![Project logo](/weight-tracker-logo.svg)
+
 # Proyecto de seguimiento de peso
 
 
