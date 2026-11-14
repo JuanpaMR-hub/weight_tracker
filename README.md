@@ -21,37 +21,23 @@ Obviamente la documentación de DRF, especificamente la parte de serializers
 - [Django Documentation](https://www.django-rest-framework.org/api-guide/serializers/#field-level-validation])
 
 ---
-### Sesión 1
+### Sesión 2
 ---
-Para esta sesión me metí desde el computador de escritorio, me costó un poco acostumbrarme a los comandos de windows pero se pudo jajaja
-Estuve haciendo un poco con mis propios conocimientos pero despues me veia en la necesidad de retomar los videos que vi de la playlist
-lo genial es que en el mismo video nos enseña en que parte de la documentación de Django se puede encontrar mas información
+Para la sesión 2 estaba pensando en que puedo hacer. Encontré una buena idea implementar usuarios a esto
 
-#### Hice:
+¿por que usuarios? para practicar el uso de JWT
 
-- La base del proyecto de django
-- Uso de gitignore
-- .env con otro llamado example
-- Creación del modelo Registro
-- Creación del serializador
-- Una View simple
-- Test del peso que sea positivo
+¿Lo usará alguien mas? no. jajaja
 
-#### Aprendí:
+Investigando puedo subir este proyecto a railway y para evitar el uso indebido de esto mejor dejarlo con una autenticación para acceder a los datos
 
-La verdad es mas sencillo de lo que pensaba, me demoré mas en elegir un buen nombre al modelo jajaja
+Entonces. Trabajo para esta sesión:
+- Modelo de Usuario implementado
+- Enlazar el Registro con el Usuario
+- Crear endpoints que permita revisar el registro del peso por el usuario
 
-Lo unico nuevo que aprendí fue el uso del validate en los serializers. Lo demas si lo sabía pero me falta emplearlo
 
- 
-#### Debo/Quiero hacer:
+Aprendí:
 
-Quiero usar una view generica mejor, pero ahora estoy siguiendo el video para ver a donde va todo esto. Hablando de eso no seguí todo el video
-
-Quedé en el segundo de la playlist casi a mitad de su duración
-
-Ademas de la view... creo que estaría listo con eso para hacer el MVP
-
-Con esa view generica me permite hacer el CRUD completo y ahí cualquier request que llegue va a ser manejada por una sola view
-
-Podría usar la IA para que me genere un HTML sencillo que consuma mi API. Dandome un formulario simple para ingresar el peso y su fecha ademas de un gráfico que me muestre el seguimiento
+Aprendí como hacer el Nested Serializer:
+Se tiene que crear una nueva variable que contenga el serializer del item que necesito. En mi caso el usuario necesitaba una variable llamada "registros". Pero no funcionaba solamente con eso y es que en el models tengo que poner el mismo nombre como "related_name". Es decir, en el modelo de Registro le agrego que con su relación su related_name será el mismo que ocupé en la serialización
